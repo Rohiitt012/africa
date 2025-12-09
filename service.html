@@ -28,6 +28,43 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            .service-wrapper .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .service-wrapper .row > div {
+                display: flex;
+                margin-bottom: 30px;
+            }
+            .service-box-items {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+            }
+            .service-box-items .icon {
+                margin-bottom: 20px;
+                display: block;
+            }
+            .service-box-items .icon img {
+                display: block;
+                width: auto;
+                height: auto;
+            }
+            .service-box-items .content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            .service-box-items .content p {
+                flex: 1;
+                margin-bottom: 0;
+            }
+            .service-box-items h4 {
+                margin-bottom: 15px;
+            }
+        </style>
     </head>
     <body>
 
@@ -93,7 +130,7 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
+                                <a href="index-3.html">
                                     <img src="assets/img/logo/primara-logo.jpg" alt="logo-img" style="height:52px;width:auto;">
                                 </a>
                             </div>
@@ -104,7 +141,7 @@
                             </div>
                         </div>
                         <p class="text d-none d-lg-block">
-                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                            Contact our team for any inquiries or support. We're here to assist you with quick and reliable guidance.
                         </p>
                         <div class="mobile-menu fix mb-3"></div>
                         <div class="offcanvas__contact">
@@ -115,7 +152,7 @@
                                         <i class="fal fa-map-marker-alt"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                        <a href="contact.html">408, Dubai Real Estate Centre Building Al Mina Road. Al-Mina Dubai. UAE</a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -123,7 +160,7 @@
                                         <i class="fal fa-envelope"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="mailto:export@primaraglobal.ccom"><span class="mailto:export@primaraglobal.ccom">export@primaraglobal.ccom</span></a>
+                                        <a href="mailto:export@primaraglobal.com"><span class="mailto:export@primaraglobal.com">export@primaraglobal.com</span></a>
                                     </div>
                                 </li>
                                 <li class="d-flex align-items-center">
@@ -139,7 +176,7 @@
                                         <i class="far fa-phone"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
+                                        <a href="tel:+97143452006">+97143452006</a>
                                     </div>
                                 </li>
                             </ul>
@@ -169,7 +206,7 @@
                         <ul class="contact-list">
                             <li>
                                 <i class="far fa-envelope"></i>
-                                <a href="mailto:export@primaraglobal.ccom" class="link">export@primaraglobal.ccom</a>
+                                <a href="mailto:export@primaraglobal.com" class="link">export@primaraglobal.com</a>
                             </li>
                             <li>
                                 <i class="fa-solid fa-phone-volume"></i> <a href="tel:+97143452006">+97143452006</a>
@@ -194,7 +231,7 @@
                         <div class="header-main style-2">
                             <div class="header-left">
                                 <div class="logo">
-                                    <a href="index.html" class="header-logo">
+                                    <a href="index-3.html" class="header-logo">
                                         <img src="assets/img/logo/primara-logo.jpg" alt="logo-img" style="height:52px;width:auto;">
                                     </a>
                                 </div>
@@ -221,7 +258,6 @@
                                         </nav>
                                     </div>
                                 </div>
-                                <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
                                 <div class="header-button">
                                     <a href="contact.html" class="theme-btn">
                                         <span>
@@ -241,20 +277,6 @@
                 </div>
             </div>
         </header>
-
-        <!-- Search Area Start -->
-        <div class="search-wrap">
-            <div class="search-inner">
-                <i class="fas fa-times search-close" id="search-close"></i>
-                <div class="search-cell">
-                    <form method="get">
-                        <div class="search-field-holder">
-                            <input type="search" class="main-search-input" placeholder="Search...">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
 
         <!--<< Breadcrumb Section Start >>-->
         <div class="breadcrumb-wrapper bg-cover" style="background-image: url('assets/img/breadcrumb.jpg');">
@@ -288,9 +310,8 @@
         <section class="service-section fix section-padding">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="wow fadeInUp">Services We Offer</span>  
                     <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Provide Comprehensive Ecological<br> Service
+                        SERVICES WE OFFER
                     </h2>  
                 </div>
                 <div class="service-wrapper mb-0">
@@ -301,39 +322,25 @@
                                    <img src="assets/img/service/icon/s-icon-1.svg" alt="icon-img">
                                 </div>
                                 <div class="content">
-                                    <h4>
-                                        <a href="service-details.html">
-                                            Distributor Appointment & Market Representation
-                                        </a>
-                                    </h4>
+                                    <h4>Distributor Appointment & Market Representation</h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        We appoint established, reputable distributors in agreed markets, ensuring every partnership is fully aligned with the brand's expectations and approvals.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                            <div class="service-box-items box-shadow active">
+                            <div class="service-box-items box-shadow">
                                 <div class="icon">
                                    <img src="assets/img/service/icon/s-icon-2.svg" alt="icon-img">
                                 </div>
                                 <div class="content">
-                                    <h4>
-                                        <a href="service-details.html">
-                                            Regulatory Compliance, Documentation & Labelling Support 
-                                        </a>
-                                    </h4>
+                                    <h4>Regulatory Compliance, Documentation & Labelling Support</h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        We offer comprehensive country-specific documentation and labelling support to ensure full compliance with regulatory requirements across destination markets.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -343,18 +350,11 @@
                                    <img src="assets/img/service/icon/s-icon-3.svg" alt="icon-img">
                                 </div>
                                 <div class="content">
-                                    <h4>
-                                        <a href="service-details.html">
-                                            Strategic Warehousing in Jebel Ali, UAE 
-                                        </a>
-                                    </h4>
+                                    <h4>Strategic Warehousing in Jebel Ali, UAE</h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        Our secure, strategically located warehousing facilities in Jebel Ali—one of the world's most efficient logistics hubs—ensure safe handling, proper temperature control, and organized inventory management for a wide range of FMCG products.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -364,18 +364,11 @@
                                    <img src="assets/img/service/icon/s-icon-4.svg" alt="icon-img">
                                 </div>
                                 <div class="content">
-                                    <h4>
-                                        <a href="service-details.html">
-                                            Sales & Export Teams in UAE and Democratic Republic of Congo
-                                        </a>
-                                    </h4>
+                                    <h4>Sales & Export Teams in UAE and Democratic Republic of Congo</h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        We maintain dedicated Sales and Export teams in both the UAE and the Democratic Republic of Congo, enabling efficient management of operations across key markets.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -386,17 +379,12 @@
                                 </div>
                                 <div class="content">
                                     <h4>
-                                        <a href="service-details.html">
-                                            solar repair
-                                        </a>
+                                        Work With Top Distributors
                                     </h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        We represent Africa's leading FMCG distributors, managing their buying, compliance, and banking requirements with precision and reliability.<br>Our trusted partnerships ensure that brands connect with high-performing distributors across the continent.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -406,60 +394,39 @@
                                    <img src="assets/img/service/icon/s-icon-11.svg" alt="icon-img">
                                 </div>
                                 <div class="content">
-                                    <h4>
-                                        <a href="service-details.html">
-                                            power storage
-                                        </a>
-                                    </h4>
+                                    <h4>Establish Your Route to Market</h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        We help brands build long-lasting relationships with influential buyers, distributors, and retailers. Through our strategic network, we ensure your products reach the right markets, the right channels, and the right consumers.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                             <div class="service-box-items box-shadow">
                                 <div class="icon">
-                                   <img src="assets/img/service/icon/s-icon-1.svg" alt="icon-img">
+                                   <img src="assets/img/service/icon/s-icon-8.svg" alt="icon-img">
                                 </div>
                                 <div class="content">
-                                    <h4>
-                                        <a href="service-details.html">
-                                            solar energy
-                                        </a>
-                                    </h4>
+                                    <h4>Financial Safety & Stability</h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        All invoices are handled directly through Primara Global, ensuring secure and timely payments.<br>Transactions are routed through top-rated UAE banks, providing complete financial safety and peace of mind for our brand partners.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
                             <div class="service-box-items box-shadow">
                                 <div class="icon">
-                                   <img src="assets/img/service/icon/s-icon-2.svg" alt="icon-img">
+                                   <img src="assets/img/service/icon/s-icon-7.svg" alt="icon-img">
                                 </div>
                                 <div class="content">
-                                    <h4>
-                                        <a href="service-details.html">
-                                            Sales & Export Teams in UAE and Democratic Republic of Congo
-                                        </a>
-                                    </h4>
+                                    <h4>Building Brand Equity</h4>
                                     <p>
-                                        Mauris ultrices ligula eget volutpat aliquet nullam
+                                        We elevate brand visibility and strengthen recognition across key African markets.<br><br>Our market-focused strategies help position your brand as a leading, pioneering force in the region.
                                     </p>
-                                    <a href="service-details.html" class="theme-btn-2 mt-3">
-                                        read More
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -497,7 +464,7 @@
                         <div class="content">
                             <p>Make a Quote</p>
                             <h3>
-                                <a href="mailto:export@primaraglobal.ccom">export@primaraglobal.ccom</a>
+                                <a href="mailto:export@primaraglobal.com">export@primaraglobal.com</a>
                             </h3>
                         </div>
                     </div>
@@ -548,7 +515,7 @@
                                 <div class="widget-head">
                                     <h3>Quick Links</h3>
                                 </div>
-                                                                <ul class="list-area">
+                                <ul class="list-area">
                                     <li>
                                         <a href="about.html">
                                             <i class="fa-solid fa-chevron-right"></i>
@@ -575,23 +542,29 @@
                                 <div class="widget-head">
                                     <h3>Services</h3>
                                 </div>
-                                                                <ul class="list-area">
+                                <ul class="list-area">
                                     <li>
-                                        <a href="about.html">
+                                        <a href="service.html">
                                             <i class="fa-solid fa-chevron-right"></i>
-                                            About
+                                            Distributor Appointment & Market Representation
                                         </a>
                                     </li>
                                     <li>
                                         <a href="service.html">
                                             <i class="fa-solid fa-chevron-right"></i>
-                                            Service
+                                            Regulatory Compliance, Documentation & Labelling Support
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">
+                                        <a href="service.html">
                                             <i class="fa-solid fa-chevron-right"></i>
-                                            Contact-Us
+                                            Strategic Warehousing in Jebel Ali, UAE
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="service.html">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                            Building Brand Equity
                                         </a>
                                     </li>
                                 </ul>
@@ -649,19 +622,11 @@
                 <div class="container">
                     <div class="footer-wrapper d-flex align-items-center justify-content-between">
                         <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                            © All Copyright 2024 by <a href="index.html">ReEnergy</a>
+                            © All Copyright 2024 by <a href="index.html">Primara Global DWC-LLC</a>
                         </p>
                         <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                            <li>
-                                <a href="contact.html">
-                                    Terms & Condition
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact.html">
-                                    Privacy Policy
-                                </a>
-                            </li>
+                            
+                            
                         </ul>
                     </div>
                 </div>
@@ -695,3 +660,4 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
