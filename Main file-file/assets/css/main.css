@@ -1747,16 +1747,18 @@ span {
   border: 1px solid transparent;
 }
 .faq-content .accordion-item .accordion-header .accordion-button::after {
-  font-weight: 500;
+  font-weight: 700;
   transition: all 0.3s ease-in-out !important;
-  background-image: url(../../assets/img/chevron-right.svg);
+  background-image: none;
   color: var(--theme2);
+  content: "+";
 }
 .faq-content .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url(../../assets/img/chevron-down.svg);
-  font-weight: 500;
+  background-image: none;
+  font-weight: 700;
   color: var(--theme2);
-  transform: rotate(0);
+  transform: none;
+  content: "-";
 }
 .faq-content .accordion-item .accordion-header .accordion-button.collapsed {
   background-color: transparent;
@@ -1991,7 +1993,10 @@ span {
   margin-top: 20px;
 }
 .offer-items .content h5 {
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.9);
+}
+.offer-items .content p {
+  color: rgba(255, 255, 255, 0.75);
 }
 .offer-items .shape-top {
   position: absolute;
@@ -6449,6 +6454,23 @@ input.main-search-input::placeholder {
   display: inline-block;
   font-weight: 500;
   text-transform: uppercase;
+}
+.offer-section .section-title span {
+  font-size: 28px;
+  font-weight: 700;
+}
+.faq-section-2 .section-title span {
+  position: relative;
+  padding-bottom: 6px;
+}
+.faq-section-2 .section-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--theme);
 }
 .section-title h2 {
   font-weight: bold;
